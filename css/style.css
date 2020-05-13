@@ -1,0 +1,73 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Roboto";
+}
+ul li {
+  list-style: none;
+}
+ul li a {
+  text-decoration: none;
+  color: grey;
+}
+/* inizio nav */
+main .nav {
+  background-color: black;
+  color: white;
+  width: 220px;
+  height: 100vh;
+  float:left;
+}
+.nav .logo {
+  height: 40px;
+  margin: 13px;
+}
+.nav .menu {
+  margin-left: 13px;
+}
+.menu ul li {
+  padding: 6px;
+}
+.menu p {
+  padding: 6px;
+}
+.menu-due {
+
+}
+
+/* inizio content */
+main .content {
+  background-color: #33334d;
+  color: white;
+  width: calc(100% - 220px);
+  height: 100vh;
+  float:left;
+}
+/* botton upgrade */
+.upgrade {
+  background-color: #1f1f2e;
+  height: 50px;
+  text-align: right;
+}
+.upgrade button {
+  border: 1px solid white;
+  border-radius: 14px;
+  height: 28px;
+  background-color: #1f1f2e;
+  color: white;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-top:11px;
+  margin-right: 3px;
+}
+.content .menu-content {
+  text-align: center;
+}
+.menu-content ul li {
+  display: inline-block;
+  font-size: 11px;
+  padding-right: 6px;
+}
