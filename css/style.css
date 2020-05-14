@@ -34,7 +34,7 @@ main .nav {
   width: 180px;
   height: 100%;
   float:left;
-  overflow-y: scroll;
+  overflow-y: hidden;
 }
 
 .nav .logo {
@@ -52,6 +52,10 @@ main .nav {
   padding: 6px;
   font-size: 12px;
 }
+.playlist {
+  overflow-y: scroll;
+  height: 70%;
+}
 .menu ul li a:hover {
   color: white;
 }
@@ -62,9 +66,11 @@ main .nav {
   border-left: 3px solid green;
 }
 .nav .row-one {
+  height: calc(100% - 140px);
 }
 .nav .row-two {
   margin-left: 13px;
+  height: 140px;
 }
 .row-two a {
   text-decoration: none;
