@@ -36,6 +36,7 @@ main .nav {
   float:left;
   overflow-y: scroll;
 }
+
 .nav .logo {
   height: 30px;
   margin: 13px;
@@ -57,6 +58,32 @@ main .nav {
 .menu p {
   padding: 6px;
 }
+.nav .menu .green {
+  border-left: 3px solid green;
+}
+.nav .row-one {
+}
+.nav .row-two {
+  margin-left: 13px;
+}
+.row-two a {
+  text-decoration: none;
+  color: white;
+}
+.row-two hr {
+  margin-top: 8px;
+  margin-bottom: 8px;
+  background-color: : grey;
+  margin-right: 5px;
+}
+.row-two img {
+  height: 30px;
+  background-color: grey;
+  border: 1px solid grey;
+  border-radius: 30px;
+  vertical-align: middle;
+}
+/* installa app e john doe */
 
 /* FINE NAV */
 
@@ -106,7 +133,7 @@ main .content {
 
 /*  album */
 .content  img {
-  height: 140px;
+  width: 100%;
   margin-right: 12px;
 }
 .content .album{
@@ -122,6 +149,24 @@ main .content {
 .content .album .col {
   float: left;
   text-align: center;
+  width: calc(100% / 6);
+  padding: 6px;
+}
+@media screen and (min-width:768px) and (max-width: 992px) {
+  .content .album .col {
+    float: left;
+    text-align: center;
+    width: calc(100% / 4);
+    padding: 6px;
+  }
+}
+@media screen and (max-width: 769px) {
+  .content .album .col {
+    float: left;
+    text-align: center;
+    width: calc(100% / 2);
+    padding: 6px;
+  }
 }
 .album p {
   font-size: 12px;
