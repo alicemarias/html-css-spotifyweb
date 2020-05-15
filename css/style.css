@@ -307,6 +307,11 @@ footer .col-left {
   vertical-align: middle;
   margin-right: 8px;
 }
+.col-left .brano {
+  font-size: 12px;
+  color:grey;
+  display: block;
+}
 /*colonna centrale footer */
 footer .col-center {
   width: 35%;
@@ -342,6 +347,13 @@ footer .col-right {
   background-color: white;
   text-align: right;
   display: inline-block;
+}
+/* hover icone footer */
+footer i:hover {
+  font-size: 16px;
+}
+.col-center i:hover {
+  font-size: 24px;
 }
 /* media query footer */
 @media screen and (max-width: 769px) {
