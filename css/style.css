@@ -14,13 +14,11 @@ ul li a {
   text-decoration: none;
   color: grey;
 }
-
 .clearfix::after {
   content: "";
   clear: both;
   display: table;
 }
-
 main {
   width: 100%;
   height: calc(100vh - 70px);
@@ -36,21 +34,44 @@ main .nav {
   float:left;
   overflow-y: hidden;
 }
-
+/* logo spotify */
 .nav .logo {
   height: 30px;
   margin: 13px;
 }
+/* logo small spotify per menu ridotto */
+.nav .logo-small {
+  display: none;
+}
+
+/* inizio row-one */
+.nav .row-one {
+  height: calc(100% - 140px);
+}
+.row-one p {
+  padding: 6px;
+  margin-left: 13px;
+}
+/* menu row-one*/
 .nav .menu {
   margin-left: 13px;
 }
-.nav .menu ul li img {
+.nav .menu img {
   height: 22px;
   vertical-align: middle;
 }
-.menu ul li {
-  padding: 6px;
-  font-size: 12px;
+.menu a {
+  text-decoration: none;
+  color: grey;
+  display: block;
+}
+.menu a:hover {
+  color: white;
+}
+
+/* playlist row one */
+.nav .playlist {
+  margin-left: 13px;
 }
 .playlist {
   overflow-y: scroll;
@@ -61,18 +82,16 @@ main .nav {
   vertical-align: middle;
   margin-right: 4px;
 }
-.menu ul li a:hover {
-  color: white;
-}
-.menu p {
+.row-one ul li {
   padding: 6px;
+  font-size: 12px;
 }
-.nav .menu .green {
-  border-left: 3px solid green;
+.row-one .playlist a:hover {
+  color:white;
 }
-.nav .row-one {
-  height: calc(100% - 140px);
-}
+/* fine row-one */
+
+/* inizio row two del menu, installa app e john doe */
 .nav .row-two {
   margin-left: 13px;
   height: 140px;
@@ -81,6 +100,7 @@ main .nav {
   text-decoration: none;
   color: white;
 }
+
 .row-two hr {
   margin-top: 8px;
   margin-bottom: 8px;
@@ -100,8 +120,42 @@ main .nav {
 .row-two .install a{
   color:grey;
 }
+.row-two a:hover {
+  color:white;
+}
 /* installa app e john doe */
 
+/* media query per menu nav ridotto */
+@media screen and (max-width: 479px) {
+  .nav .logo {
+    display:none;
+  }
+  .nav .logo-small {
+    display: block;
+    height: 25px;
+    margin-left: 13px;
+    margin-top: 6px;
+    margin-bottom: 6px;
+  }
+  .menu a {
+    display: none;
+  }
+  .nav .menu img {
+    height: 25px;
+  }
+  main .nav {
+    width: 60px;
+  }
+   .nav .playlist {
+     display: none;
+   }
+   .nav p {
+     display: none;
+   }
+   .row-two a {
+     display: none;
+   }
+}
 /* FINE NAV */
 
 /* INIZIO CONTENT */
@@ -113,7 +167,13 @@ main .content {
   float:left;
   overflow-y: scroll;
 }
-/* botton e upgrade */
+/* dimensioni content con menu nav ridotto */
+@media screen and (max-width: 479px)  {
+  main .content {
+    width: calc(100% - 60px);
+  }
+}
+/* striscia tasto upgrade */
 .upgrade {
   background-color: #1f1f2e;
   height: 50px;
@@ -134,7 +194,7 @@ main .content {
   height: 34px;
   font-size: 15px;
 }
-/* fine bottom e upgrade */
+/* fine striscia tasto upgrade */
 .content .menu-content {
   text-align: center;
 }
@@ -169,6 +229,33 @@ main .content {
   width: calc(100% / 6);
   padding: 6px;
 }
+.album p {
+  font-size: 12px;
+  color: grey;
+}
+.row-popular img {
+  border: 1px solid #33334d;
+  border-radius: 90px;
+}
+.disk {
+  position: relative;
+}
+/* inizio pulsante play con hover sugli album */
+.disk .play {
+  display: none;
+  position: absolute;
+  text-align: center;
+  font-size: 45px;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.disk:hover .play {
+  display: block;
+}
+/* fine pulsante play con hover */
+/* media query album */
 @media screen and (min-width:768px) and (max-width: 992px) {
   .content .album .col {
     float: left;
@@ -185,28 +272,8 @@ main .content {
     padding: 6px;
   }
 }
-.album p {
-  font-size: 12px;
-  color: grey;
-}
-.row-popular img {
-  border: 1px solid #33334d;
-  border-radius: 90px;
-}
-.disk {
-  position: relative;
-}
-.disk .play {
-  display: none;
-  position: absolute;
-  text-align: center;
-  font-size: 35px;
-  top: 55px;
-  right: 65px;
-}
-.disk:hover .play {
-  display: block;
-}
+/* fine album */
+
 /* FINE MAIN */
 
 /* INIZIO FOOTER */
@@ -272,4 +339,15 @@ footer .col-right {
   background-color: white;
   text-align: right;
   display: inline-block;
+}
+/* media query footer */
+@media screen and (max-width: 769px) {
+  footer i {
+    font-size: 10px;
+  }
+  .col-center i {
+    font-size: 12px;
+    padding-left: 3px;
+    padding-right: 3px;
+  }
 }

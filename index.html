@@ -9,16 +9,36 @@
     <title> spotify web </title>
   </head>
   <body>
+    <!-- inizio main -->
     <main>
+      <!-- inizio nav -->
       <div class="nav">
-        <img class="logo" src="img/logo.svg" alt="">
-        <div class="menu row-one">
-          <ul>
-          <li class="green"><a href="#"><img src="img/home.svg" alt="">Home</a></li>
-          <li><a href="#"><img src="img/search.svg" alt="">Cerca</a></li>
-          <li><a href="#"><img src="img/libreria.svg" alt="">La tua libreria</a></li>
-          </ul>
+        <!-- logo spotify -->
+        <img class="logo" src="img/logo.svg" alt="logo spotify">
+        <!-- logo spotify small per  menu ridotto-->
+        <img class="logo-small" src="img/logo-small.svg" alt="logo small spotify">
+
+        <!-- inizio row one della nav -->
+        <div class="row-one">
+          <!-- inizio menu -->
+          <div class="menu">
+            <div class="casa">
+              <img src="img/home.svg" alt="menu home">
+              <a href="#"><span>Home</span></a>
+            </div>
+            <div class="ricerca">
+              <img src="img/search.svg" alt="menu cerca">
+              <a href="#"><span>Cerca</span></a>
+            </div>
+            <div class="libreria">
+              <img src="img/libreria.svg" alt="menu libreria">
+              <a href="#"><span>La tua libreria</span></a>
+            </div>
+          </div>
+          <!-- fine menu -->
+
           <p>PLAYLIST</p>
+          <!-- inizio playlist -->
           <ul class="playlist">
             <li><a href="#"><i class="fa fa-plus-square" aria-hidden="true"></i>Crea playlist</a></li>
             <li><a href="#">Nome playlist</a></li>
@@ -29,9 +49,13 @@
             <li><a href="#">Nome playlist</a></li>
             <li><a href="#">Nome playlist</a></li>
           </ul>
-        </div>
+          <!-- fine playlist -->
 
-        <div class="menu-due row-two">
+        </div>
+        <!-- fine row one della nav -->
+
+        <!-- inizio row two della nav -->
+        <div class="row-two">
           <div class="install">
             <i class="fas fa-arrow-circle-down"></i>
             <a href="#">Installa app</a>
@@ -40,12 +64,20 @@
           <img src="img/profile.svg" alt="">
           <a href="#">John Doe</a>
         </div>
-      </div>
+        <!-- fine row two della nav -->
 
+      </div>
+      <!-- fine nav -->
+
+      <!-- inizio content -->
       <div class="content">
+        <!-- striscia con tasto upgrade -->
         <div class="upgrade">
           <button type="button" name="upgrade"> EFFETTUA L'UPGRADE</button>
         </div>
+        <!-- fine striscia con tasto upgrade -->
+
+        <!-- inizio menu contenuti -->
         <div class="menu-content">
           <ul>
             <li><a href="#">IN EVIDENZA</a></li>
@@ -56,8 +88,12 @@
             <li><a href="#">SCOPRI</a></li>
           </ul>
         </div>
+        <!-- fine menu contenuti -->
+
+        <!-- inizio album -->
         <div class="album">
             <h4>Recently played</h4>
+            <!-- inizio riga dei recently played -->
             <div class="row-recent clearfix">
               <div class="col disk">
                 <img src="img/metal_lifting.jpg" alt="album heavy metal">
@@ -96,7 +132,9 @@
                 <div class="play"><i class="far fa-play-circle"></i></div>
               </div>
             </div>
+            <!-- fine riga dei recently played -->
 
+            <!-- inizio  riga dei creato per jhon doe -->
             <div class="row-created clearfix">
                 <h4>Creato per jhon Doe</h4>
                 <p>Piu ascolti, più accurati saranno i suggerimenti</p>
@@ -111,6 +149,9 @@
                   <div class="play"><i class="far fa-play-circle"></i></div>
                 </div>
             </div>
+            <!-- fine  riga dei creato per jhon doe -->
+
+            <!-- inizio artisti popolari -->
             <div class="row-popular clearfix">
               <h4>Artisti più popolari</h4>
               <p>Piu ascolti, più accurati saranno i suggerimenti</p>
@@ -125,12 +166,20 @@
                 <div class="play"><i class="far fa-play-circle"></i></div>
               </div>
             </div>
-          </div>
-        </div>
-      </main>
+            <!-- inizio artisti popolari -->
 
+          </div>
+          <!-- fine album -->
+
+        </div>
+        <!-- fine content -->
+      </main>
+      <!-- fine main -->
+
+      <!-- inizio footer -->
       <footer>
         <div class="clearfix">
+          <!-- inizio colonna sinistra -->
           <div class="col-left">
             <ul>
               <li><img src="img/sinister.jpeg" alt="album sinister"><span>Sinister</span></li>
@@ -138,7 +187,9 @@
               <li><i class="fa fa-heart" aria-hidden="true"></i></li>
             </ul>
           </div>
+          <!-- fine colonna sinistra -->
 
+          <!-- inizio colonna centrale -->
           <div class="col-center">
             <i class="fas fa-random"></i>
             <i class="fa fa-backward" aria-hidden="true"></i>
@@ -147,15 +198,18 @@
             <i class="fas fa-redo"></i>
             <div class="barravolume-1"></div>
           </div>
+          <!-- fine colonna centrale -->
 
+          <!-- inizio colonna destra -->
           <div class="col-right">
            <i class="fa fa-bars" aria-hidden="true"></i>
            <i class="fa fa-tv" aria-hidden="true"></i>
            <i class="fa fa-volume-up" aria-hidden="true"></i>
            <div class="barravolume-2"></div>
          </div>
-        </div>
+         <!-- fine colonna destra -->
 
-      </footer>
+        </div>
+    </footer>
   </body>
 </html>
