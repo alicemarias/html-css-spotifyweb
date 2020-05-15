@@ -63,10 +63,13 @@ main .nav {
 .menu a {
   text-decoration: none;
   color: grey;
-  display: block;
 }
 .menu a:hover {
   color: white;
+}
+.menu .ricerca {
+  margin-top: 6px;
+  margin-bottom: 6px;
 }
 
 /* playlist row one */
