@@ -23,6 +23,7 @@ main {
   width: 100%;
   height: calc(100vh - 70px);
 }
+
 /* FINE REGOLE GENEERALI */
 
 /* INIZIO NAV */
@@ -47,6 +48,7 @@ main .nav {
 /* inizio row-one */
 .nav .row-one {
   height: calc(100% - 140px);
+  overflow: hidden;
 }
 .row-one p {
   padding: 6px;
@@ -176,7 +178,7 @@ main .content {
     width: calc(100% - 60px);
   }
 }
-/* striscia tasto upgrade */
+/* striscia tasto upgrade */ /* dovrei metterli position fixed ma mi crolla tutto */
 .upgrade {
   background-color: #1f1f2e;
   height: 50px;
